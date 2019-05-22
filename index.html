@@ -6,47 +6,23 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/javascript/game.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Pokeballs Collector!</h1>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    </head>
+    <body>
+        <p id="result"></p>
+        <div class="balls">
 
-      <!-- body text  -->
-      <div>
-        <p>Welcome to the Pokeballs Collector game!</p>
-        <p><em>Spoiler Alert: You <strong>DO NOT</strong> need to be a Pokemon master.</em></p>
-        <br />
-        <p>You will be given a random number at the start of the game.</p>
-        <br />
-        <p>
-          There are four pokeballs below. By clicking on a pokeball you will add a
-          specific amount of points to your total score.
-        </p>
-        <br />
-        <p>
-          The value of each pokeball is hidden from you until you click on it.
-        </p>
-        <br />
-        <p>Each time the game starts, the value of the pokeballs will change.</p>
-        <br />
-        <h2>Good luck!</h2>
-      </div>
-      <!-- random number box  -->
-      <div class="" id="randomNumber"></div>
-      <!-- wins/losses  -->
-      <div class="" id="winLossBox"></div>
-      <!-- div with clickable crystal images -->
-      <div class="" id="crystalButtons"></div>
-      <!-- total score -->
-      <div>
-        <p id="scoreText">Your total score is:</p>
-      </div>
-      <!-- number tracking for crystal clicks -->
-      <div class="" id="totalScore"></div>
-    </div>
-  </body>
+        </div>
+        <p id="win"></p>
+        <p id="loss"></p>
+
+        <script src="./assets/javascript/game.js" async defer></script>
+    </body>
 </html>
