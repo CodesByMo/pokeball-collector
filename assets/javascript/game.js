@@ -34,19 +34,21 @@ var startGame = function () {
 
 startGame();
 
-$("document").on('click', ".pokeballs", function () {
+$(document).on('click', ".pokeballs", function () {
     var num = parseInt($(this).attr('data-random'));
     prevNum += num;
     console.log(prevNum);
     if (prevNum > startingNum) {
-        loss--;
+        loss++;
         $("#loss").html(loss);
+        prevNum = 0;
         startGame();
 
     }
     else if (prevNum === startingNum) {
         win++;
         $("#win").html(win);
+        prevNum = 0;
         startGame();
     }
 
