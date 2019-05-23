@@ -1,11 +1,29 @@
-.pokeballs {
-    border: 1px solid green;
-    height: 200px;
-    width: 200px;
+body{
+    background-color: black;
 }
 
-.balls {
+.pokeballs {
+    height: 200px;
+    width: 200px;
+    border: 1px solid green;
+}
+
+#balls {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.myContainer {
+    color:lightgrey;
+    text-align: center;
+    align-content: center;
+}
+
+p, h4 {
+    margin: 0 auto;
+}
+
+.rules {
+    background-color: antiquewhite;
 }

@@ -1,2 +1,3 @@
 # unit-4-game
-Crystals Collector Game
+Pokeball Collector Game.
+Gotta catch em' all!

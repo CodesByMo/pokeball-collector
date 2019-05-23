@@ -10,11 +10,17 @@ var loss = 0;
 var win = 0;
 var prevNum = 0;
 
+var ballsImg =
+    ["./assets/images/pokeball-full.png",
+        "./assets/images/greatball-full.png",
+        "./assets/images/ultraball-full.png",
+        "./assets/images/masterball-full.png"]
+
 
 var startGame = function () {
-    $(".balls").empty();
+    $("#balls").empty();
 
-    startingNum = Math.floor(Math.random() * 120) + 19;
+    startingNum = Math.floor(Math.random() * 120) + 1;
 
 
     $("#result").html('Your number: ' + startingNum);
@@ -26,31 +32,38 @@ var startGame = function () {
         var ballBtn = $("<div>");
         ballBtn.attr({
             "class": 'pokeballs',
-            "data-random": randomNum
+            "data-random": randomNum,
+            "style": "background-image: url(" + ballsImg[i] + "); background-repeat: no-repeat;"
+            // "background-image: url(./assets/images/pokeball.png)"
         });
-        $(".balls").append(ballBtn);
+        $("#balls").append(ballBtn);
     }
 }
-
 startGame();
 
 $(document).on('click', ".pokeballs", function () {
     var num = parseInt($(this).attr('data-random'));
     prevNum += num;
+
+    $("#myScore").html("Your Score: " + prevNum)
+
     console.log(prevNum);
     if (prevNum > startingNum) {
         loss++;
-        $("#loss").html(loss);
+        $("#loss").html("Your Losses: " + loss);
         prevNum = 0;
+        $("#myScore").html("Your Score: " + prevNum)
         startGame();
 
     }
     else if (prevNum === startingNum) {
         win++;
-        $("#win").html(win);
+        $("#win").html("Your Wins: " + win);
         prevNum = 0;
+        $("#myScore").html("Your Score: " + prevNum)
         startGame();
     }
+
 
 });
 
@@ -121,7 +134,7 @@ $(document).on('click', ".pokeballs", function () {
 // var randomScoreNum = [];
 
 // var wins = 0;
-// var losses = 0;
+// var Losses = 0;
 
 // // generate random number
 // var startingNum = Math.floor(Math.random() * 120) + 19;
