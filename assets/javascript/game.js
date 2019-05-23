@@ -11,14 +11,17 @@ var win = 0;
 var prevNum = 0;
 
 var ballsImg = [
-    "./assets/images/pepe1.png"
+    "./assets/images/pokeball.png",
+    "./assets/images/greatball.png",
+    "./assets/images/ultraball.png",
+    "./assets/images/masterball.png"
 ]
 
 
 var startGame = function () {
     $("#balls").empty();
 
-    startingNum = Math.floor(Math.random() * 120) + 1;
+    startingNum = Math.floor(Math.random() * 120) + 19;
 
 
     $("#result").html('Your number: ' + startingNum);
