@@ -10,11 +10,9 @@ var loss = 0;
 var win = 0;
 var prevNum = 0;
 
-var ballsImg =
-    ["./assets/images/pokeball-full.png",
-        "./assets/images/greatball-full.png",
-        "./assets/images/ultraball-full.png",
-        "./assets/images/masterball-full.png"]
+var ballsImg = [
+    "./assets/images/pepe1.png"
+]
 
 
 var startGame = function () {
