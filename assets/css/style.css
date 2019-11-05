@@ -79,3 +79,99 @@ span .fa {
         transform: scale(1.1);
    }
 }
+
+
+.pokeballs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 15%; */
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+  }
+
+  .pokeballs:hover,
+  .pokeballs.hover {
+    cursor: pointer;
+    -webkit-animation: anti-wiggle 1s ease-in-out;
+    animation: anti-wiggle 1s ease-in-out;
+  }
+  .pokeballs:hover:after,
+  .pokeballs.hover:after {
+    -webkit-animation: wiggle 1s ease-in-out;
+    animation: wiggle 1s ease-in-out;
+  }
+  .pokeballs:focus,
+  .pokeballs:active {
+    outline: 0;
+  }
+
+  @keyframes wiggle {
+    20% {
+      -webkit-transform: rotate(14deg);
+      transform: rotate(14deg);
+    }
+    40% {
+      -webkit-transform: rotate(-28deg);
+      transform: rotate(-28deg);
+    }
+    60% {
+      -webkit-transform: rotate(8deg);
+      transform: rotate(8deg);
+    }
+    80% {
+      -webkit-transform: rotate(-4deg);
+      transform: rotate(-4deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes anti-wiggle {
+    20% {
+      -webkit-transform: translateX(-4px) rotate(-14deg);
+      transform: translateX(-4px) rotate(-14deg);
+    }
+    40% {
+      -webkit-transform: translateX(8px) rotate(28deg);
+      transform: translateX(8px) rotate(28deg);
+    }
+    60% {
+      -webkit-transform: translateX(-4px) rotate(-8deg);
+      transform: translateX(-4px) rotate(-8deg);
+    }
+    80% {
+      -webkit-transform: translateX(2px) rotate(4deg);
+      transform: translateX(2px) rotate(4deg);
+    }
+    100% {
+      -webkit-transform: translateX(0px) rotate(0deg);
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    img{
+        max-width: 50%;
+    }
+    #balls {
+        margin-top: 25%;
+    }
+    .pokeballs {
+        width: 187px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
