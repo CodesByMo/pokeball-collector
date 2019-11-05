@@ -46,22 +46,22 @@ $(document).on('click', ".pokeballs", function () {
     var num = parseInt($(this).attr('data-random'));
     prevNum += num;
 
-    $("#myScore").html("Your Score: " + prevNum)
+    $("#myScore").html("Your Score: <br>" + prevNum)
 
     console.log(prevNum);
     if (prevNum > startingNum) {
         loss++;
-        $("#loss").html("Your Losses: " + loss);
+        $("#loss").html("Your Losses: <br>" + loss);
         prevNum = 0;
-        $("#myScore").html("Your Score: " + prevNum)
+        $("#myScore").html("Your Score: <br>" + prevNum)
         startGame();
 
     }
     else if (prevNum === startingNum) {
         win++;
-        $("#win").html("Your Wins: " + win);
+        $("#win").html("Your Wins: <br>" + win);
         prevNum = 0;
-        $("#myScore").html("Your Score: " + prevNum)
+        $("#myScore").html("Your Score: <br>" + prevNum)
         startGame();
     }
 

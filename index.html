@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -18,32 +19,27 @@
   <body>
     <div class="container myContainer">
       <!-- body text  -->
-      <div class="rules">
-        <h2>Welcome to the Pokemon Collector game!</h2>
+      <!-- <div class="rules">
+        <h2>Pokeball Collector game!</h2>
         <br />
-        <p>You will be given a random number at the start of the game.</p>
-        <br />
-        <p>
-          There are four pokeballs below. By clicking on a pokeball you will add
+        <p>You will be given a random number at the start of the game.
+
+          There are four pokeballs below, by clicking on a pokeball you will add
           a specific amount of points to your total score.
-        </p>
-        <br />
-        <p>
+
           The value of each pokeball is hidden from you until you click on it.
-        </p>
-        <br />
-        <p>
+
           Each time the game starts, the value of he pokeballs will change.
         </p>
-        <br />
+
         <h2>Good luck!</h2>
-      </div>
+      </div> -->
 
       <!-- <div class="container myContainer"> -->
       <div class="row">
         <h4 id="result"></h4>
       </div>
-      <div class="row">
+      <div class="row" id="countRow">
         <h4 class="col-4" id="win">Your Wins:</h4>
         <h4 class="col-4" id="loss">Your Losses:</h4>
         <h4 class="col-4" id="myScore">Your Score:</h4>
@@ -52,6 +48,11 @@
         <!-- <div class="balls"></div> -->
       </div>
     </div>
+<footer>
+    <span>
+        Made with <i class="fa fa-heart pulse"></i> by <a href="https://codesbymo.github.io" target="_blank">CodesByMo</a>
+    </span>
+</footer>
     <script src="./assets/javascript/game.js"></script>
   </body>
 </html>

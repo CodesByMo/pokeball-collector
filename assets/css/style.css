@@ -1,9 +1,8 @@
 body{
-    background-color: #313131;
+    background: #121b2d;
 }
 .container{
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #313131;
 }
 
 #flavorTxt{
@@ -20,6 +19,11 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20%;
+}
+
+#countRow {
+    height: 30px;
 }
 
 .myContainer {
@@ -32,12 +36,46 @@ p, h4 {
     margin: 0 auto;
 }
 
-.rules {
+/* .rules {
+    line-height: 1.5rem;
     background-color: antiquewhite;
-}
+} */
 
 #win, #loss, #myScore, #result{
     color: white;
-    background-color: blue;
+    /* background-color: blue; */
     margin-bottom: 10px;
+}
+
+span {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+span a {
+    color: white;
+    text-decoration: none;
+}
+span .fa {
+    color: #e90606;
+    margin: 0 3px;
+    font-size: 10px;
+    animation: pound 0.35s infinite alternate;
+}
+@-webkit-keyframes pound {
+    to {
+        transform: scale(1.1);
+   }
+}
+@keyframes pound {
+    to {
+        transform: scale(1.1);
+   }
 }
