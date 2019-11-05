@@ -17,42 +17,32 @@
     ></script>
   </head>
   <body>
-    <div class="container myContainer">
-      <!-- body text  -->
-      <!-- <div class="rules">
-        <h2>Pokeball Collector game!</h2>
-        <br />
-        <p>You will be given a random number at the start of the game.
+    <div class="container">
+      <div class="row" id="rulesRow">
+        <div class="rules">
+          <h2>Pokeball Collector game!</h2>
+          <p>
+            You will be given a random number at the start of the game. 
+            There will be four pokeballs, by clicking on a pokeball you will add a
+            specific amount of points to your total score. 
+            The value of each pokeball is hidden from you until you click on it.
+            Each time the game starts, the value of he pokeballs will change.
+          </p>
 
-          There are four pokeballs below, by clicking on a pokeball you will add
-          a specific amount of points to your total score.
-
-          The value of each pokeball is hidden from you until you click on it.
-
-          Each time the game starts, the value of he pokeballs will change.
-        </p>
-
-        <h2>Good luck!</h2>
-      </div> -->
-
-      <!-- <div class="container myContainer"> -->
-      <div class="row">
-        <h4 id="result"></h4>
+          <h2>Good luck!</h2>
+        </div>
       </div>
-      <div class="row" id="countRow">
-        <h4 class="col-4" id="win">Your Wins:</h4>
-        <h4 class="col-4" id="loss">Your Losses:</h4>
-        <h4 class="col-4" id="myScore">Your Score:</h4>
-      </div>
-      <div class="row" id="balls">
-        <!-- <div class="balls"></div> -->
+      <div class="pokeball">
+        <a href="game.html" class="playBtn">
+          <img href="game.html" src="./assets/images/pokeball.png" alt="img" />
+        </a>
       </div>
     </div>
-          <footer>
-              <span>
-                  Made with <i class="fa fa-heart pulse"></i> by <a href="https://codesbymo.github.io" target="_blank">CodesByMo</a>
-              </span>
-          </footer>
-    <script src="./assets/javascript/game.js"></script>
+    <footer>
+            <span>
+                Made with <i class="fa fa-heart pulse"></i> by <a href="https://codesbymo.github.io" target="_blank">CodesByMo</a>
+            </span>
+        </footer>
+    <script src="./assets/javascript/landingpage.js"></script>
   </body>
 </html>
